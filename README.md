@@ -1,6 +1,8 @@
 # Trivia-API
 A fun trivia web app with RESTful API built as a part of Udacity's [Full Stack Web Developer Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd0044).
 
+![Trivia App](/img/sample.png)
+
 The application currently supports
 * Display questions - both all questions and by category. Questions should show the question, category and difficulty rating by default and can show/hide the answer.
 * Delete questions.
@@ -86,6 +88,7 @@ npm start
 ```
 
 ## API Reference
+see [Trivia API Reference](https://github.com/minjielei/Trivia-API/blob/master/API_Reference.md)
 
 ## Author
 Minjie Lei. As part of Udacity's [Full Stack Web Developer Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd0044).
