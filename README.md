@@ -88,7 +88,7 @@ npm start
 ```
 
 ## API Reference
-see [Trivia API Reference](https://github.com/minjielei/Trivia-API/API_Reference.md)
+see [Trivia API Reference](https://github.com/minjielei/Trivia-API/blob/master/API_Reference.md)
 
 ## Author
 Minjie Lei. As part of Udacity's [Full Stack Web Developer Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd0044).
