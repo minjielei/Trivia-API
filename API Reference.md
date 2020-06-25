@@ -329,11 +329,11 @@ The following error types are returned by the API when requests fail:
     "questions": [
         {
             {
-            "id": 20,
-            "question": "What is the heaviest organ in the human body?",
-            "answer": "The Liver",
-            "difficulty": 4,
-            "category": 1
+                "id": 20,
+                "question": "What is the heaviest organ in the human body?",
+                "answer": "The Liver",
+                "difficulty": 4,
+                "category": 1
             },
             {
                 "id": 21,
