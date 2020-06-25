@@ -25,32 +25,14 @@ The following error types are returned by the API when requests fail:
 * Sample: `curl http://127.0.0.1:5000/categories`
 ```python
 {
-    "categories": [
-        {
-            "id": 1,
-            "type": "Science"
-        },
-        {
-            "id": 2,
-            "type": "Art"
-        },
-        {
-            "id": 3,
-            "type": "Geography"
-        },
-        {
-            "id": 4,
-            "type": "History"
-        },
-        {
-            "id": 5,
-            "type": "Entertainment"
-        },
-        {
-            "id": 6,
-            "type": "Sports"
-        }
-    ],
+    "categories": {
+        "1": "Science",
+        "2": "Art",
+        "3": "Geography",
+        "4": "History",
+        "5": "Entertainment",
+        "6": "Sports"
+    },
     "success": True,
     "total_categories": 6
 }
@@ -63,6 +45,15 @@ The following error types are returned by the API when requests fail:
 * Sample: `curl http://127.0.0.1:5000/questions`
 ```python
 {
+    "categories": {
+        "1": "Science",
+        "2": "Art",
+        "3": "Geography",
+        "4": "History",
+        "5": "Entertainment",
+        "6": "Sports"
+    },
+    "current_category": None,
     "questions": [
         {
             "id": 2,
@@ -146,9 +137,7 @@ The following error types are returned by the API when requests fail:
 * Sample: `curl -X DELETE http://127.0.0.1:5000/questions/9`
 ```python
 {
-    "deleted_question": 9,
-    "success": True,
-    "total_questions": 18,
+    "deleted": 9,
     "questions": [
         {
             "id": 2,
@@ -220,7 +209,9 @@ The following error types are returned by the API when requests fail:
             "difficulty": 2,
             "category": 3
         }
-    ]
+    ],
+    "success": True,
+    "total_questions": 18
 }
 ```
 
@@ -230,7 +221,7 @@ The following error types are returned by the API when requests fail:
 * Sample: `curl http://127.0.0.1:5000/questions?page=2 -X POST -H "Content-Type: application/json" -d '{"question": "what is the lightest massive particle?", "answer": "neutrino", "difficulty": "2", "category": "1"}'`
 ```python
 {
-    "questio_id": 24,
+    "created": 24,
     "success": True,
     "total_questions": 20,
     "question": [
